@@ -1,0 +1,28 @@
+{
+  "name": "jpredham.github.io",
+  "version": "1.0.0",
+  "description": "My personal site.",
+  "main": "js/src/index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpredham/jpredham.github.io.git"
+  },
+  "author": "Joe Predham <joseph@predham.com>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/jpredham/jpredham.github.io/issues"
+  },
+  "homepage": "https://github.com/jpredham/jpredham.github.io#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-html": "^8.0.2",
+    "grunt-sass": "^1.2.1"
+  }
+}
