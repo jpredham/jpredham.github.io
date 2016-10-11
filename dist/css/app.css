@@ -117,7 +117,7 @@
   font-size: 40px;
 }
 
-strong {
+strong, h3 {
   font-family: "geomanistbold";
 }
 
@@ -125,6 +125,14 @@ body {
   font-family: "geomanist_regularregular";
   font-size: 18px;
   line-height: 1.8;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+.carousel-indicators {
+  bottom: 0;
 }
 
 /*# sourceMappingURL=app.css.map */
