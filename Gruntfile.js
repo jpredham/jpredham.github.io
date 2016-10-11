@@ -61,15 +61,27 @@ module.exports = function(grunt) {
         tasks: ['dist-css']
       }
     },
+
+    connect: {
+      server: {
+        options: {
+          port: 3000,
+          base: '.'
+        }
+      }
+    },
   });
 
   // Load packages
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   // Tasks
   grunt.registerTask('dist-css', ['sass', 'cssmin']);
-  grunt.registerTask('default', ['dist-css']);
+  grunt.registerTask('dist', ['dist-css']);
+  grunt.registerTask('default', ['dist']);
+  grunt.registerTask('serve', ['dist', 'connect:server', 'watch']);
 
 };
