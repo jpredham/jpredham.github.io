@@ -20,6 +20,10 @@ body {
   line-height: 1.8;
 }
 
+.carousel {
+  margin-bottom: 30px;
+}
+
 .carousel-item {
   img {
     width: 100%;
@@ -28,4 +32,19 @@ body {
 
 .carousel-indicators {
   bottom: 0;
+  li {
+    border-color: #222;
+    background-color: rgba(0,0,0,0);
+  }
+  .active {
+    background-color: #222;
+  }
+}
+
+.carousel-caption {
+  font-family: $geomanist-bold;
+  text-shadow: none;
+  h3 {
+    color: #222;
+  }
 }

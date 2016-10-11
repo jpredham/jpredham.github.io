@@ -127,12 +127,34 @@ body {
   line-height: 1.8;
 }
 
+.carousel {
+  margin-bottom: 30px;
+}
+
 .carousel-item img {
   width: 100%;
 }
 
 .carousel-indicators {
   bottom: 0;
+}
+
+.carousel-indicators li {
+  border-color: #222;
+  background-color: transparent;
+}
+
+.carousel-indicators .active {
+  background-color: #222;
+}
+
+.carousel-caption {
+  font-family: "geomanistbold";
+  text-shadow: none;
+}
+
+.carousel-caption h3 {
+  color: #222;
 }
 
 /*# sourceMappingURL=app.css.map */
