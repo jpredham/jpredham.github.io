@@ -6,7 +6,9 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
+
     pkg: grunt.file.readJSON('package.json'),
+
     sass: {
         options: {
             sourceMap: true,
@@ -22,6 +24,7 @@ module.exports = function(grunt) {
           }
         }
     },
+
     cssmin: {
       options: {
         compatibility: 'ie9',
@@ -41,6 +44,7 @@ module.exports = function(grunt) {
         ]
       }
     },
+
     uglify: {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
@@ -49,13 +53,23 @@ module.exports = function(grunt) {
         src: 'src/<%= pkg.name %>.js',
         dest: 'build/<%= pkg.name %>.min.js'
       }
-    }
+    },
+
+    watch: {
+      src: {
+        files: ["scss/**/*.scss"],
+        tasks: ['dist-css']
+      }
+    },
   });
 
+  // Load packages
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // Default task(s).
-  grunt.registerTask('default', ['sass', 'cssmin']);
+  // Tasks
+  grunt.registerTask('dist-css', ['sass', 'cssmin']);
+  grunt.registerTask('default', ['dist-css']);
 
 };
