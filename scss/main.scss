@@ -1,6 +1,7 @@
 
 .banner {
   font-family: $geomanist-ultra;
+  line-height: 1.8;
   font-size: 96px;
 }
 
@@ -9,12 +10,18 @@
   font-size: 40px;
 }
 
+.bg {
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
 strong {
   font-family: $geomanist-bold;
 }
 
-p {
+body {
   font-family: $geomanist-regular;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.8;
 }

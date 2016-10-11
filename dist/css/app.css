@@ -108,6 +108,7 @@
 
 .banner {
   font-family: "geomanistultra";
+  line-height: 1.8;
   font-size: 96px;
 }
 
@@ -116,13 +117,19 @@
   font-size: 40px;
 }
 
+.bg {
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
 strong {
   font-family: "geomanistbold";
 }
 
-p {
+body {
   font-family: "geomanist_regularregular";
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.8;
 }
 
