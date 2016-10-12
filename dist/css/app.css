@@ -139,6 +139,7 @@ body {
 
 .carousel {
   margin-bottom: 30px;
+  height: 420px;
 }
 
 .carousel-item img {
@@ -160,11 +161,12 @@ body {
 
 .carousel-caption {
   text-shadow: none;
+  padding-bottom: 0;
 }
 
 .carousel-caption h3 {
-  color: #222;
-  font-family: "geomanistlight";
+  color: #373a3c;
+  font-family: "geomanistbold";
 }
 
 .avatar {
