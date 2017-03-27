@@ -28,4 +28,10 @@ body {
 a {
   color: #17AF84;
   background-color: #fbfbfb;
+  padding: 0 5px;
+}
+
+a:hover {
+  color: #fbfbfb;
+  background-color: #000000;
 }
