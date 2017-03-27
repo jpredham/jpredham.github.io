@@ -24,3 +24,8 @@ body {
 .big {
   font-family: "Geomanist Ultra";
 }
+
+a {
+  color: #17AF84;
+  background-color: #fbfbfb;
+}
