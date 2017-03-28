@@ -17,6 +17,11 @@ body {
   text-align: right;
 }
 
+::selection {
+  background-color: #111111;
+  color: #FFF689;
+}
+
 .container {
   margin-top: 20px;
 }
