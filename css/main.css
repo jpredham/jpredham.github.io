@@ -18,8 +18,8 @@ body {
 }
 
 ::selection {
-  background-color: #111111;
-  color: #FFF689;
+  color: #111111;
+  background-color: #FFF689;
 }
 
 .container {
