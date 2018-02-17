@@ -26,6 +26,14 @@ body {
   margin-top: 20px;
 }
 
+.row {
+  margin: 20px 0;
+}
+
+h1 {
+  padding-top: 20px;
+}
+
 .big {
   font-family: "Geomanist Ultra";
 }
