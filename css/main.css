@@ -1,11 +1,17 @@
 @font-face {
   font-family: "Geomanist Book";
-  src: url("../fonts/geomanist/geomanist-book-webfont.ttf");
+  src: url("../fonts/geomanist/geomanist-book-webfont.woff2") format("woff2"),
+       url("../fonts/geomanist/geomanist-book-webfont.woff") format("woff"),
+       url("../fonts/geomanist/geomanist-book-webfont.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Geomanist Ultra";
-  src: url("../fonts/geomanist/geomanist-ultra-webfont.ttf");
+  src: url("../fonts/geomanist/geomanist-ultra-webfont.woff2") format("woff2"),
+       url("../fonts/geomanist/geomanist-ultra-webfont.woff") format("woff"),
+       url("../fonts/geomanist/geomanist-ultra-webfont.ttf") format("truetype");
+  font-display: swap;
 }
 
 body {
